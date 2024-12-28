@@ -1,0 +1,150 @@
+/* App容器样式 */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; /* 全局字体颜色变白 */
+  background: url('lake-6798400_1280.jpg') no-repeat center center/cover;
+}
+
+/* Header容器样式 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #3b3e46; /* 深灰背景 */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* 文字颜色变白 */
+}
+
+/* 表单输入和按钮布局优化 */
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #555; /* 深色边框 */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #3b3e46; /* 深灰背景 */
+  color: #ffffff; /* 输入文字颜色变白 */
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #666; /* 禁用按钮变灰 */
+  cursor: not-allowed;
+}
+
+/* NFT画廊容器样式 */
+.nft-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* 每个NFT项的卡片样式 */
+.listBox {
+  width: 220px;
+  height: 320px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #3b3e46; /* 深灰背景 */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #ffffff; /* 卡片文字颜色变白 */
+}
+
+.listBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.listBox .listImg {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.listBox .listImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listBox .listTitle {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff; /* 标题文字变白 */
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.listBox .listRemark {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #dddddd; /* 描述文字稍微变浅 */
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+
+.listBox .listBtnBox {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.listBox .listBtnBox button {
+  height: 40px;
+  width: 90%;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.listBox .listBtnBox button:hover {
+  background-color: #0056b3;
+}
+
+.listBox .listBtnBox button:disabled {
+  background-color: #666;
+}
